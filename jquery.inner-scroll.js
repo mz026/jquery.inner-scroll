@@ -13,7 +13,7 @@ $.fn.innerScroll = function(options) {
   $(this).prepend(createPaddingElement());
   $(this).append(createPaddingElement());
 
-  $(this).bind("mousewheel", function(e) {
+  $(this).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function(e) {
     if ( isReachedTop( $(this) ) ) {
       $(this).scrollTop( $(this).scrollTop() + paddingHeight );
     }
