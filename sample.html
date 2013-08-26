@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <title>Index</title>
+    <style type="text/css">
+      .outer {
+        border: 1px solid black;
+        width: 500px;
+        height: 300px;
+        margin: auto;
+      }
+
+      .inner {
+        width: 200px;
+        height: 100px;
+        border: 1px solid gray;
+      }
+
+      .pop {
+        position: fixed;
+        top: 0;
+        width: 200px;
+        height: 400px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.inner-scroll.js"></script>
+  </head>
+
+  <body>
+    <div class="outer">1</div>
+    <div class="outer">1</div>
+    <div class="outer">1</div>
+    <div class="outer">1</div>
+    <div class="outer">1</div>
+
+    <div class="pop">
+      <div class="inner">inner</div>
+      <div class="inner">inner</div>
+      <div class="inner">inner</div>
+      <div class="inner">inner</div>
+      <div class="inner">inner</div>
+    </div>
+
+    <script type="text/javascript">
+      $(".pop").innerScroll();
+    </script>
+  </body>
+</html>
